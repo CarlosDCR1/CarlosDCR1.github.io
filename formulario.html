@@ -1,0 +1,134 @@
+<html lang="es">
+<head>
+<meta name="description" content="Soy Carlos Calderon, Estudiante de Ingenieria en Sistemas de la Universidad Mariano Galvez (8.° semestre) con conocimiento en Desarrollo Web">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES || es_GT">
+<title>Formulario | Inscripcion Equipo</title>
+<style>
+    main{
+        background-color: beige;
+    }
+    main{
+        background-color: aquamarine;
+    }
+    form {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    </style>
+</head>
+
+<body bgcolor="D7FAF0">
+
+    <main>
+	<center>
+        <br>
+		<h1>Formulario Inscripcion a Equipo 02-2026</h1>
+	</center>
+    <br>
+	<br>
+	<hr size="1" color="black">
+	<br>
+	<br>
+	<form autocomplete="off">
+        <table align="center">
+            <tr>
+                <td>
+        <label for="StudenID">Carne de Estudiante</label> </td>
+         <td>
+         <input type="text" name="Txt_Carne" id="StudenID" required/>
+         </td>
+            </tr>
+
+            <tr>
+                <td>
+        <label for="StudenName">Nombre de Estudiante</label>
+            </td>
+            <td>
+        <input type="text" name="Txt_Carne" id="StudenName" required/>
+            </td>
+            </tr>
+        <tr>
+                <td>
+        <label for="StudenAge">Año de Nacimiento</label>
+            </td>
+            <td>
+        <input type="date" id="StudenAge" required max="2010-07-23"/>
+            </td>
+            </tr>
+
+        <tr>
+                <td>
+        <label for="SelectedTeamID">Seleccione el Equipo</label>
+            </td>
+            <td>
+        <select id="SelectedTeamID">
+        <option value="1">FC Barcelona</option>
+        <option value="2">Real Madrid</option>    
+        </select>
+            </td>
+            </tr>
+        <tr>
+				<td align="center" colspan="2">
+			     <input type="submit" name="btnEnviar" value="Enviar">
+				</td>
+			</tr>
+
+
+        </table>
+
+    
+    </form>
+
+
+    <br>
+	<br>
+	<hr size="1" color="black">
+	<br>
+	<br>
+	<form autocomplete="off">
+        <div>
+        <label for="StudenID">Carne de Estudiante</label>
+        <input type="text" name="Txt_Carne" id="StudenID" required/>
+        </div>
+
+        <div>
+        <label for="StudenName">Nombre de Estudiante</label>
+        <input type="text" name="Txt_Carne" id="StudenName" required/>
+        </div>
+
+        <div>
+        <label for="StudenAge">Año de Nacimiento</label>
+        <input type="date" id="StudenAge" required max="2010-07-23"/>
+        </div>
+
+        <div>
+        <label for="SelectedTeamID">Seleccione el Equipo</label>
+        <select id="SelectedTeamID">
+        <option value="1">FC Barcelona</option>
+        <option value="2">Real Madrid</option>    
+        </select>
+       </div>
+
+       <div>
+        <input type="submit" name="btnEnviar" value="Enviar">
+       </div>
+    
+    </form>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
