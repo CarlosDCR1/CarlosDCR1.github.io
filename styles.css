@@ -314,7 +314,6 @@ footer {
 
 /* PARA LAS CARD DE PROYECTOS */
 .tarjeta {
-    background-color: #ffffff;
     border-radius: var(--radius-lg);
     border: 1px solid var(--borde-base);
     box-shadow: 0 4px 16px rgba(0,0,0,0.05);
@@ -322,6 +321,21 @@ footer {
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+.tarjeta-color1{
+    background: linear-gradient(to bottom, white 0%, rgb(85, 182, 238) 10%, transparent 100%);
+}
+.tarjeta-color2{
+    background: linear-gradient(to bottom, white 0%, rgb(234, 234, 138) 10%, transparent 100%);
+}
+.tarjeta-color3{
+    background: linear-gradient(to bottom, white 0%, rgb(245, 213, 118) 10%, transparent 100%);
+}
+.tarjeta-color4{
+    background: linear-gradient(to bottom, white 0%, rgb(211, 172, 241) 10%, transparent 100%);
+}
+.tarjeta-color5{
+    background: linear-gradient(to bottom, white 0%, rgb(200, 240, 118) 10%, transparent 100%);
 }
 
 .tarjeta > div:first-child img {
