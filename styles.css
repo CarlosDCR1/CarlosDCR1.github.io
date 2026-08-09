@@ -11,26 +11,30 @@
     box-sizing: border-box;
 }
 
-/* COLOR DE LETRA DE TODA LA PAGINA Y FONDO DE LA PAGINA */
+/* FONDO DE LA PAGINA */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
     background-color: #fafafa;
     line-height: 1.6;
 }
 
 /* COLOR DE TITULOS */
 h1, h2 {
+    font-family: "Times New Roman", Times, serif;
     color: #000000;
     margin-bottom: 15px;
+
 }
 
+p, h3{
+    font-family: 'Courier New', monospace;
+    align-items: center;
+    padding: 0vh 2vh;
+}
 
 /* Lineas de separacion delgada  */
 hr {
     border: none;
-    border-top: 1px solid #d62828;
-    margin: 20px 0;
+    border-top: 1px solid #03030322;
 }
 
 /* LINKS */
@@ -49,7 +53,7 @@ header {
     border-bottom: 1px solid #eeeeeeb0;
     position: sticky;
     top: 0;
-    max-width: 12000px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -95,19 +99,32 @@ nav a:hover {
 
 /* Contenido principal margen*/
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 40px;
+    max-width: 7500px;
+    margin: 0 0;
+    
 }
 
 section {
-    padding: 40px 0;
+    padding: 10px 0;
+  
 }
+#inicio {
+    background-color: #e6eaff; 
+    padding: 100px 120px;
+     overflow: hidden; 
+}
+
+#proyectos {
+    background-color: #e8f1f9; 
+    padding: 100px 120px;
+}
+
 
 .botones {
     margin: 20px 0;
     display: flex;
     gap: 15px;
+    
 }
 
 .btn {
@@ -124,6 +141,7 @@ section {
 .btn-secundario {
     border: 1px solid #4F7CFF;
     color: #4F7CFF;
+    padding: 1vh 11vh;
 }
 
 .tecnologias {
@@ -165,6 +183,19 @@ footer {
     font-weight: 600;
     margin-top: 15px;
 }
+.textfondoProy {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px; 
+    background-color: #031049d7; 
+    border: 1px solid #d6ddff;
+    color: #fcfdff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+}
 
 /* Punto */
 .punto {
@@ -182,9 +213,21 @@ footer {
 
 
 /* DOS COLUMNAS */
+.Alin-textoC {
+    display: grid;
+    gap: 40px;
+    align-items: center; 
+}
 .Alin-texto {
     display: grid;
     grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: center; 
+}
+
+.Alin-textoTar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 40px;
     align-items: center; 
 }
@@ -201,37 +244,64 @@ footer {
     background-color: #ffffff;
     border-radius: var(--radius-lg);
     border: 1px solid var(--borde-base);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-    padding: 24px;
+    box-shadow: 5 4px 16px rgba(0,0,0,0.05);
+    padding: 20px 20px;
+    width: 100%;
 }
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--borde-base);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    overflow: hidden;   /* clave: recorta lo que se salga de las esquinas redondeadas */
+    padding: 0;          /* la tarjeta ya no tiene padding general */
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;  /* llena el ancho sin deformar la imagen, recortando lo que sobre */
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 34px;       /* el padding que antes tenía .tarjeta, ahora solo en el texto */
+}
+
+
+
 /* CONFIG IMAGEN */
 .hero-imagen {
+    position: relative; 
     width: 100%;
     max-width: 400px;
-    
+    z-index: 2;
 }
 
 /* BLUR DETRAS DE OBJETOS */
 .blurPointA{
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: calc(20% + 40px);
     background: #5bc3e9;
     width: 90px;
     height: 90px;
-    filter: blur(50px);
-    z-index: -1;
+    filter: blur(25px);
+    z-index: 1;
 }
 
 .blurPointL{
     position: absolute;
-    top: 60%;
-    right: calc(43% + 50px);
+    top: 75%;
+    right: calc(40% + 50px);
     background: #af85ee;
     width: 90px;
     height: 90px;
-    filter: blur(50px);
-    z-index: -1;
+    filter: blur(25px);
+    z-index: 1;
 }
+
+
 
 
