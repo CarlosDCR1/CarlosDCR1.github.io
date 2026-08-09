@@ -1,0 +1,237 @@
+:root {
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --borde-base: rgba(79, 124, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLOR DE LETRA DE TODA LA PAGINA Y FONDO DE LA PAGINA */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+/* COLOR DE TITULOS */
+h1, h2 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+/* Lineas de separacion delgada  */
+hr {
+    border: none;
+    border-top: 1px solid #d62828;
+    margin: 20px 0;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #43a7dd;
+}
+
+/* BANER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f6f6f6da;
+    border-bottom: 1px solid #eeeeeeb0;
+    position: sticky;
+    top: 0;
+    max-width: 12000px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Confi del encabezado */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+nav a {
+    color: #333333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2a8aea;
+}
+
+/* CONFI BOTONES */
+.btn-cv {
+    padding: 8px 16px;
+    background-color: #4F7CFF;
+    color: #ffffff;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+/* Contenido principal margen*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.botones {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+
+.btn-principal {
+    background-color: #4F7CFF;
+    color: #ffffff;
+}
+
+.btn-secundario {
+    border: 1px solid #4F7CFF;
+    color: #4F7CFF;
+}
+
+.tecnologias {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tecnologias li {
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius:  var(--radius-sm);
+    font-size: 13px;
+}
+
+/* Pie de pagina */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888888;
+    font-size: 14px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* fondo */
+.textfondo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px; 
+    background-color: #eef1ff; 
+    border: 1px solid #d6ddff;
+    color: #4F7CFF;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Punto */
+.punto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #46dd4e; 
+    animation: pulso 1.5s infinite;
+}
+@keyframes pulso {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+
+/* DOS COLUMNAS */
+.Alin-texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: center; 
+}
+
+/* En pantallas chicas, que se pongan una debajo de otra */
+@media (max-width: 800px) {
+    .Alin-texto {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* PARA LAS CARD DE PROYECTOS */
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--borde-base);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    padding: 24px;
+}
+/* CONFIG IMAGEN */
+.hero-imagen {
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+/* BLUR DETRAS DE OBJETOS */
+.blurPointA{
+    position: absolute;
+    top: 20%;
+    right: calc(20% + 40px);
+    background: #5bc3e9;
+    width: 90px;
+    height: 90px;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.blurPointL{
+    position: absolute;
+    top: 60%;
+    right: calc(43% + 50px);
+    background: #af85ee;
+    width: 90px;
+    height: 90px;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+

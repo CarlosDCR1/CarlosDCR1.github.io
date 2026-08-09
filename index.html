@@ -1,77 +1,150 @@
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta name="description" content="Soy Carlos Calderon, Estudiante de Ingenieria en Sistemas de la Universidad Mariano Galvez (8.° semestre) con conocimiento en Desarrollo Web">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES || es_GT">
-<title>Inicio | Carlos Calderon</title>
-<style type="text/css"></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de David Calderón, estudiante de desarrollo web.">
+    <title>Portafolio | David Calderón</title>
+    <link rel="icon" href="./img/Logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body background="./dsfds.png">
-<header>
-    <table width="100%" bgcolor="B2D492">
-    <tbody>
-        <tr>
-            <td>
-             <a href="../">
-             <img src ="./logo.svg.webp" alt="Logo de CC" width="100px" height="80px" />
-             </a>
-            </td>
-            <td align="center">
-                <nav align="center">
-                    <font size="18">Bienvenidos!</font>
-                </nav>
-            </td>
-            <td align="left">
-                <nav align="left">
-                    <ul type="Circle">
-                        <li>Proyectos</li>
-                        <li>Contacto</li>
-                    </ul>            
-                </nav>
-            </td>
-        </tr>
-    </tbody>
-    </table>
-</header>        
+    <!-- menu de navegacion -->
+    <header>
+        <div class="logo">
+            <img src="./img/yo.JPEG" alt="Foto David">
+        </div>
 
-<main>
-    <selection>
-        <center>
-        <h1>Hola Mundo Soy Carlos</h1>
-        <a href="formulario.html">
-        <img src ="./ma.jpg" width="70%"/>
-        </a>
-        </center>
-    </selection>
-<br>
-<br>
-<hr size="1" color="B2D492">
-<selction>
-<h3 align="center">Sobre mi</h3>
-<p align="center"><font align="center" color="0d043d" face="Century">
-	Me gusta aprender sobre las computadoras tanto en la parte de software como la de hadware y soy estudiante de la Facultad de Ingenieria en Sistemas
-</font></p> 
-<hr size="1" color="B2D492">
-</selction>
-</main>
-<br>
-<br>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+            </ul>
+        </nav>
 
-<footer align="center">
-    <td align="center">
-    <i>2026 Carlos Calderon</i>
-    </td>
+        <a href="#" class="btn-cv">Descargar CV</a>
+    </header>
 
-</footer>
+    <main>
 
-</header>
+        <section id="inicio">
+            <div class="Alin-texto">
+                <div class="hero-texto">    
+                     <div  class="textfondo">
+                    <span class="punto"></span> 
+                        Disponible para proyectos
+                    </div>
+                    <h1>Hola, Soy <br> David Calderón</h1>
+                    <p>
+                Apasionado por crear soluciones tecnológicas mediante desarrollo web,
+                aplicaciones de escritorio, bases de datos.
+                Disfruto transformar ideas en proyectos funcionales con interfaces
+                modernas y experiencias intuitivas.
+            </p>
+            <div class="botones">
+                <a href="#proyectos" class="btn btn-principal">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-principal">contacto</a>
+            </div>
+          <ul class="tecnologias">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Python</li>
+            </ul>
+                </div>
+                <div class="blurPointA"></div>
+                <div>
+                    <img class="hero-imagen" src="./img/Inicio.png" alt="inicio" >
+                </div>
+                <div class="blurPointL"></div>
+            </div>  
+        </section>
+
+        <hr>
+
+        <!-- PROYECTO -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Próximamente voy a agregar aquí los proyectos que he desarrollado.</p>
+        </section>
+
+        <hr>
 
 
-<script>
-console.log("Hola Mundo")
-</script>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        <!-- Seccion sobre mi -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante de Ingeniería en Sistemas. Me gusta aprender sobre
+                computadoras tanto en la parte de software como de hardware, y estoy
+                enfocado en seguir mejorando mis habilidades como desarrollador.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Seccion de habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desarrollo web (HTML, CSS, JavaScript)</li>
+                <li>Programación en C# y .NET</li>
+                <li>Bases de datos: SQL Server y MySQL</li>
+                <li>Control de versiones con Git y GitHub</li>
+                <li>Python</li>
+            </ul>
+                    </div>
+
+        </section>
+
+        <hr>
+
+
+
+        <!-- Seccion de experiencia -->
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Todavía no tengo experiencia laboral formal, pero he desarrollado proyectos personales y académicos.</p>
+        </section>
+
+        <hr>
+
+        <!-- Seccion de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Correo: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+            <p>GitHub: <a href="https://github.com/" target="_blank">github.com/tu-usuario</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 David Calderón</p>
+    </footer>
+
 </body>
-
 </html>
-
