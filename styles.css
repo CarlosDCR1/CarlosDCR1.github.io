@@ -127,6 +127,14 @@ section {
     
 }
 
+.botonesPRO {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    padding: 0vh 8vh;
+    
+}
+
 .btn {
     padding: 10px 20px;
     border-radius: var(--radius-sm);
@@ -217,6 +225,7 @@ footer {
     display: grid;
     gap: 40px;
     align-items: center; 
+    padding: 0vh 2vh;
 }
 .Alin-texto {
     display: grid;
